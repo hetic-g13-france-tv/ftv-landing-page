@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Brown2018-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Brown2018-Regular'),
+      url(/static/fonts/Brown2018-Regular.ttf) format('truetype')
+    
+};
+$font-size: 26px;
+$font-size-title: 26px;
+$font-color:#b2b2b2;
+$bg-color:#f2f2f2;
+$font-ftv:'Brown2018-Regular';
+
+.step_container{
+    width: 100%;
+    font-family: $font-ftv;
+    line-height: 1.31;
+    padding: 50px 0;
+    &_text{
+        width:42%;
+        margin: auto;
+        text-align: center;
+
+        &-cta{
+            height: 50px;
+        }
+    }
+
+}

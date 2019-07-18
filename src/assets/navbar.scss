@@ -19,6 +19,7 @@ $font-ftv:'Brown2018-Regular';
     font-size: $font-size;
     color: $font-color;
     font-family: $font-ftv;
+    line-height: 1.55;
 
     
   &--first{
@@ -93,7 +94,7 @@ $font-ftv:'Brown2018-Regular';
     }
     &-search:after{
         content: "";
-        background-image: url('/static/search.png');
+        background: url('/static/search.png') top center no-repeat;
         display: inline-block;
         width: 20px;
         height: 20px;

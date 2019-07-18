@@ -22,7 +22,7 @@ $font-ftv:'Brown2018-Regular';
     flex-direction: row;
     justify-content: space-between;
     font-family: $font-ftv;
-
+    line-height: 1.55;
 
     &--first{
         width: 38%;
@@ -33,9 +33,10 @@ $font-ftv:'Brown2018-Regular';
     }
     &_text {
         width: 70%;
-        margin:100px auto;
+        margin:130px auto;
         &-title{
             font-size: $font-size-title;
+            line-height: 1.25;
             span{
                 color: #0281e6;
             }
@@ -51,7 +52,7 @@ $font-ftv:'Brown2018-Regular';
         background:url('/static/Oval.png') right center no-repeat;
         height: 100%;
         img{
-            width: 90%;
+            width: 80%;
             margin: auto;
         }
     }

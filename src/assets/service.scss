@@ -20,6 +20,7 @@ $font-ftv:'Brown2018-Regular';
     margin: 4% auto;
     padding-bottom: 30px;
     font-family: $font-ftv;
+    line-height: 1.55;
 
     &--first,
     &--second,
@@ -47,6 +48,7 @@ $font-ftv:'Brown2018-Regular';
         margin: auto;
         &-title{
             font-size: $font-size-title;
+            line-height: 1.25;
         }
         &-subtitle{
             font-size: $font-size;
@@ -54,11 +56,11 @@ $font-ftv:'Brown2018-Regular';
             padding: 30px 0;
         }
         &-cta{
+            cursor: pointer;
             color: #eb0032;
             &:after{
                 content: "";
-                background-image: url('/static/right-arrow.svg');
-                background-repeat: no-repeat;
+                background: url('/static/right-arrow.svg') bottom center no-repeat;
                 display: inline-block;
                 width: 20px;
                 height: 15px;
