@@ -1,9 +1,19 @@
+@font-face {
+    font-family: 'Brown2018-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Brown2018-Regular'),
+      url(/static/fonts/Brown2018-Regular.ttf) format('truetype')
+};
+
 $font-size: 18px;
 $font-size-title: 32px;
 $bg-color:white;
 $font-ftv:Brown2018-Regular;
 $font-color:#212830;
 $font-scnd-color:#b2b2b2;
+$font-ftv:'Brown2018-Regular';
 
 .home_container {
     color:$font-color;
@@ -11,6 +21,8 @@ $font-scnd-color:#b2b2b2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: $font-ftv;
+
 
     &--first{
         width: 38%;

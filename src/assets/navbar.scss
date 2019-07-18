@@ -1,12 +1,25 @@
+@font-face {
+    font-family: 'Brown2018-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Brown2018-Regular'),
+      url(/static/fonts/Brown2018-Regular.ttf) format('truetype')
+};
+
 $font-size: 16px;
 $font-color:white;
 $bg-color-first:#000;
 $bg-color-second:rgb(25, 30, 37);
+$font-ftv:'Brown2018-Regular';
+
 
 .container {
     font-family: "Brown2018-Regular";
     font-size: $font-size;
     color: $font-color;
+    font-family: $font-ftv;
+
     
   &--first{
       background-color: $bg-color-first;
