@@ -5,12 +5,24 @@ $bg-color:#f2f2f2;
 
 
 .service_container{
+    width:80%;
+    margin: 4% auto;
+    padding-bottom: 30px;
     &--first,
     &--second,
     &--third{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 100px 60px;
+    }
+    &--first &_text{
+        padding-left: 100px;
+    }
+    &--second &_text,
+    &--third &_text{
+        padding-right: 100px;
+       
     }
     &_image,
     &_text{
@@ -18,7 +30,6 @@ $bg-color:#f2f2f2;
     }
     &_text{
         margin: auto;
-        padding: 40px 60px;
         &-title{
             font-size: $font-size-title;
         }
@@ -26,6 +37,24 @@ $bg-color:#f2f2f2;
             font-size: $font-size;
             color: $font-color;
             padding: 30px 0;
+        }
+        &-cta{
+            color: #eb0032;
+            &:after{
+                content: "";
+                background-image: url('/static/right-arrow.svg');
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 20px;
+                height: 15px;
+                margin-left: 10px;
+
+            }
+        }
+    }
+    &_image {
+        img{
+            width:100%;
         }
     }
 }

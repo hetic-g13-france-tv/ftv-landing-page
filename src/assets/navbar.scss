@@ -4,15 +4,15 @@ $bg-color-first:#000;
 $bg-color-second:rgb(25, 30, 37);
 
 .container {
-font-family: "Brown2018-Regular";
-  font-size: $font-size;
-  color: $font-color;
-  
+    font-family: "Brown2018-Regular";
+    font-size: $font-size;
+    color: $font-color;
+    
   &--first{
       background-color: $bg-color-first;
       height: 30px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
   }
   &--second{
       background-color: $bg-color-second;
@@ -23,7 +23,8 @@ font-family: "Brown2018-Regular";
     &--left{
         display: flex;
         flex-direction: row;
-        width:30%;
+        justify-content: flex-start;
+        width:28%;
         cursor: pointer;
     }
     &_img{
@@ -32,6 +33,12 @@ font-family: "Brown2018-Regular";
     }
     &_items{
         margin: auto;
+        opacity: .8;
+        transition: opacity .1s ease-out;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+        }
         &-button{
             background-color: transparent;
             color: $font-color;
@@ -42,7 +49,8 @@ font-family: "Brown2018-Regular";
     &--right{
         display: flex;
         justify-content: space-around;
-        width: 60%;
+        width: 17%;
+        margin-right: 8%;
         cursor: pointer;
 
     }

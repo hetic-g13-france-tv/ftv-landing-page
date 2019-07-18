@@ -14,6 +14,7 @@ $font-scnd-color:#b2b2b2;
 
     &--first{
         width: 38%;
+        padding-left: 12%;
     }
     &--second{
         width: 60%;
@@ -23,6 +24,9 @@ $font-scnd-color:#b2b2b2;
         margin:100px auto;
         &-title{
             font-size: $font-size-title;
+            span{
+                color: #0281e6;
+            }
         }
         &-subtitle{
             color: $font-scnd-color;
@@ -31,7 +35,12 @@ $font-scnd-color:#b2b2b2;
         }
     }
     &_image{
-        background:url('/static/bg-round.svg') bottom center no-repeat;
+        display: flex;
+        background:url('/static/Oval.png') right center no-repeat;
         height: 100%;
+        img{
+            width: 90%;
+            margin: auto;
+        }
     }
 }
