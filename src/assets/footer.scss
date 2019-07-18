@@ -1,0 +1,29 @@
+$font-size: 12px;
+$font-color:white;
+$bg-color:#000;
+
+.container {
+    color: $font-color;
+    background-color: $bg-color;
+}  
+.footer{
+    font-size: $font-size;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width:80%;
+    height: 90px;
+    &_items {
+        margin: auto;
+        &:after {
+            content: "|";
+            padding-left: 13px;
+            font-size: 14px;
+        }
+        &:last-child:after{
+            content: "";
+        }
+    }
+}

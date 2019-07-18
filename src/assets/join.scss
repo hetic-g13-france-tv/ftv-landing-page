@@ -1,0 +1,27 @@
+$font-size: 18px;
+$font-size-title: 26px;
+$font-color:#b2b2b2;
+$bg-color:#f2f2f2;
+
+
+.join_container{
+    background-color: $bg-color;
+    padding: 60px 10px;
+    &-title{
+        font-size: 26px;
+        color: black;
+        text-align: center;
+    }
+    &--second{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &_content{
+        width: 30%;
+        &-text{
+            color: $font-color;
+            font-size: $font-size;
+        }
+    }
+}

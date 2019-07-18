@@ -1,0 +1,37 @@
+$font-size: 18px;
+$font-size-title: 32px;
+$bg-color:white;
+$font-ftv:Brown2018-Regular;
+$font-color:#212830;
+$font-scnd-color:#b2b2b2;
+
+.home_container {
+    color:$font-color;
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--first{
+        width: 38%;
+    }
+    &--second{
+        width: 60%;
+    }
+    &_text {
+        width: 70%;
+        margin:100px auto;
+        &-title{
+            font-size: $font-size-title;
+        }
+        &-subtitle{
+            color: $font-scnd-color;
+            font-size: $font-size;
+            padding-top: 4%;
+        }
+    }
+    &_image{
+        background:url('/static/bg-round.svg') bottom center no-repeat;
+        height: 100%;
+    }
+}
