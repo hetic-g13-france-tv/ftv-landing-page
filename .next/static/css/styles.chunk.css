@@ -1,20 +1,39 @@
+@font-face {
+  font-family: 'Brown2018-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Brown2018-Regular"), url(/static/fonts/Brown2018-Regular.ttf) format("truetype"); }
+
 .container {
   font-family: "Brown2018-Regular";
   font-size: 16px;
-  color: white; }
+  color: white;
+  font-family: "Brown2018-Regular";
+  line-height: 1.55; }
   .container--first {
     background-color: #000;
+    width: 100%;
     height: 30px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-between;
+    position: fixed;
+    top: 0; }
+    .container--first--hidden {
+      top: -50px; }
   .container--second {
     background-color: #191e25;
-    height: 80px; }
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 30px; }
+    .container--second--scrolled {
+      top: 0; }
 
 .nav--left {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  justify-content: flex-start;
+  width: 28%;
   cursor: pointer; }
 
 .nav_img {
@@ -22,7 +41,12 @@
   margin: auto; }
 
 .nav_items {
-  margin: auto; }
+  margin: auto;
+  opacity: .8;
+  transition: opacity .1s ease-out;
+  cursor: pointer; }
+  .nav_items:hover {
+    opacity: 1; }
   .nav_items-button {
     background-color: transparent;
     color: white;
@@ -32,7 +56,8 @@
 .nav--right {
   display: flex;
   justify-content: space-around;
-  width: 60%;
+  width: 17%;
+  margin-right: 8%;
   cursor: pointer; }
 
 .menu {
@@ -55,15 +80,22 @@
     margin: auto; }
   .menu-search:after {
     content: "";
-    background-image: url("/static/search.png");
+    background: url("/static/search.png") top center no-repeat;
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-left: 10px; }
 
+@font-face {
+  font-family: 'Brown2018-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Brown2018-Regular"), url(/static/fonts/Brown2018-Regular.ttf) format("truetype"); }
+
 .container {
   color: white;
-  background-color: #000; }
+  background-color: #000;
+  font-family: "Brown2018-Regular"; }
 
 .footer {
   font-size: 12px;
@@ -78,71 +110,117 @@
     margin: auto; }
     .footer_items:after {
       content: "|";
-      padding-left: 13px;
+      padding-left: 2.5vw;
       font-size: 14px; }
     .footer_items:last-child:after {
       content: ""; }
 
-.join_container {
-  background-color: #f2f2f2;
-  padding: 60px 10px; }
-  .join_container-title {
-    font-size: 26px;
-    color: black;
+@font-face {
+  font-family: 'Brown2018-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Brown2018-Regular"), url(/static/fonts/Brown2018-Regular.ttf) format("truetype"); }
+
+.step_container {
+  width: 100%;
+  font-family: "Brown2018-Regular";
+  line-height: 1.31;
+  padding: 50px 0; }
+  .step_container_text {
+    width: 42%;
+    margin: auto;
     text-align: center; }
-  .join_container--second {
+    .step_container_text-cta {
+      height: 50px; }
+
+@font-face {
+  font-family: 'Brown2018-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Brown2018-Regular"), url(/static/fonts/Brown2018-Regular.ttf) format("truetype"); }
+
+.service_container {
+  width: 80%;
+  margin: 4% auto;
+  padding-bottom: 30px;
+  font-family: "Brown2018-Regular";
+  line-height: 1.55; }
+  .service_container--first, .service_container--second, .service_container--third {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
-  .join_container_content {
-    width: 30%; }
-    .join_container_content-text {
+    justify-content: space-between;
+    padding: 100px 60px; }
+  .service_container--first .service_container_text {
+    padding-left: 100px;
+    font-family: "Brown2018-Regular"; }
+  .service_container--second .service_container_text,
+  .service_container--third .service_container_text {
+    padding-right: 100px; }
+  .service_container_image, .service_container_text {
+    width: 48%; }
+  .service_container_text {
+    margin: auto; }
+    .service_container_text-title {
+      font-size: 26px;
+      line-height: 1.25; }
+    .service_container_text-subtitle {
+      font-size: 18px;
       color: #b2b2b2;
-      font-size: 18px; }
-
-.service_container--first, .service_container--second, .service_container--third {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.service_container_image, .service_container_text {
-  width: 48%; }
-
-.service_container_text {
-  margin: auto;
-  padding: 40px 60px; }
-  .service_container_text-title {
-    font-size: 26px; }
-  .service_container_text-subtitle {
-    font-size: 18px;
-    color: #b2b2b2;
-    padding: 30px 0; }
+      padding: 30px 0; }
+    .service_container_text-cta {
+      cursor: pointer;
+      color: #eb0032; }
+      .service_container_text-cta:after {
+        content: "";
+        background: url("/static/right-arrow.svg") bottom center no-repeat;
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        margin-left: 10px; }
+  .service_container_image img {
+    width: 100%; }
 
 body {
   margin: 0; }
+
+@font-face {
+  font-family: 'Brown2018-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Brown2018-Regular"), url(/static/fonts/Brown2018-Regular.ttf) format("truetype"); }
 
 .home_container {
   color: #212830;
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: "Brown2018-Regular";
+  line-height: 1.55; }
   .home_container--first {
-    width: 38%; }
+    width: 38%;
+    padding-left: 12%; }
   .home_container--second {
     width: 60%; }
   .home_container_text {
     width: 70%;
-    margin: 100px auto; }
+    margin: 130px auto; }
     .home_container_text-title {
-      font-size: 32px; }
+      font-size: 32px;
+      line-height: 1.25; }
+      .home_container_text-title span {
+        color: #0281e6; }
     .home_container_text-subtitle {
       color: #b2b2b2;
       font-size: 18px;
       padding-top: 4%; }
   .home_container_image {
-    background: url("/static/bg-round.svg") bottom center no-repeat;
+    display: flex;
+    background: url("/static/Oval.png") right center no-repeat;
     height: 100%; }
+    .home_container_image img {
+      width: 80%;
+      margin: auto; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

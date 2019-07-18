@@ -3,7 +3,7 @@ import Head from "../src/components/Head";
 
 import Navbar from "../src/components/Navbar";
 import Home from "../src/components/Home";
-import Join from "../src/components/Join";
+import Step from "../src/components/Step";
 import Service from "../src/components/Service";
 import Footer from "../src/components/Footer";
 
@@ -19,7 +19,7 @@ const App = () => (
         <Head />
         <Navbar />
         <Home />
-        <Join />
+        <Step />
         <Service />
         <Footer />
     </div>
