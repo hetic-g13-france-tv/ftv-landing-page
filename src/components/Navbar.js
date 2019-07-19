@@ -45,7 +45,7 @@ export default class Navbar extends Component {
                    "container--first--hidden": !this.state.visible
                })}>
                     <div className="nav nav--left">
-                        <img className="nav_img" src="/static/logo.png"/>
+                        <img className="nav_img" src="/static/logo.svg"/>
                     </div>
                     <div className="nav nav--right">
                         <div className="nav_items"><img src="/static/star.png"/></div>
@@ -59,7 +59,7 @@ export default class Navbar extends Component {
                 <ul className="menu">
                     <li className="menu_items">chaînes</li>
                     <li className="menu_items">catégories</li>
-                    <li className="menu-items menu-image"><img src="/static/logo.png"/></li>
+                    <li className="menu-items menu-image"><img src="/static/logo.svg"/></li>
                     <li className="menu_items">mes vidéos</li>
                     <li className="menu_items menu-search">rechercher</li>
                 </ul>

@@ -104,12 +104,16 @@ $font-ftv:'Brown2018-Regular';
     &-image{
         margin: auto;
     }
+    &-search {
+        position: relative;
+    }
     &-search:after{
         content: "";
-        background: url('/static/search.png') top center no-repeat;
+        position: absolute;
+        background: url('/static/search.svg') center center no-repeat;
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 22px;
         margin-left: 10px;
     }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>baseline-search-24px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing_v2" transform="translate(-1092.000000, -98.000000)">
+            <g id="HEADER" transform="translate(0.000000, 61.000000)">
+                <g id="baseline-search-24px" transform="translate(1088.000000, 33.000000)">
+                    <polygon id="Path" points="0 0 29 0 29 29 0 29"></polygon>
+                    <path d="M18.1548265,17.1024422 L26,24.9682417 L25.0022984,26 L17.1310096,18.1309719 C15.7007119,19.3308948 13.8994024,20 12,20 C7.58152317,20 4,16.4184768 4,12 C4,7.58152317 7.58152317,4 12,4 C16.4184768,4 20,7.58152317 20,12 C20,13.8867785 19.3397593,15.6767637 18.1548265,17.1024422 Z M12,18.6666667 C15.6881898,18.6666667 18.6666667,15.6881898 18.6666667,12 C18.6666667,8.31181017 15.6881898,5.33333333 12,5.33333333 C8.31181017,5.33333333 5.33333333,8.31181017 5.33333333,12 C5.33333333,15.6881898 8.31181017,18.6666667 12,18.6666667 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
