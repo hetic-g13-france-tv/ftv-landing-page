@@ -1,1 +1,0 @@
-{"dependencies":{"@zeit/next-sass":"^1.0.1","classnames":"^2.2.6","next":"^9.0.1","next-fonts":"^0.17.0","next-images":"^1.1.2","node-sass":"^4.12.0","react":"^16.8.6","react-dom":"^16.8.6"},"scripts":{"dev":"next","build":"next build","start":"next start"},"name":"","version":"","readme":"ERROR: No README data found!","_id":"@"}
